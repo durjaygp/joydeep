@@ -72,7 +72,6 @@
         .delay-300 { animation-delay: 0.3s; }
         .delay-400 { animation-delay: 0.4s; }
         .delay-500 { animation-delay: 0.5s; }
-        .delay-600 { animation-delay: 0.6s; }
 
         /* Lighter peachy gradient for hero background */
         .hero-gradient {
@@ -123,16 +122,6 @@
         .profile-image {
             box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.1);
         }
-
-        /* Brand Slider Animation */
-        @keyframes slideBrands {
-            0% { transform: translateX(0); }
-            100% { transform: translateX(calc(-100% - 2rem)); } /* Adjust based on gap and item width */
-        }
-
-        .brand-slider-animation {
-            animation: slideBrands 20s linear infinite;
-        }
     </style>
 </head>
 <body class="bg-white text-black">
@@ -148,7 +137,6 @@
                 <a href="#work" class="text-sm font-medium text-gray-700 hover:text-black transition-colors">Works</a>
                 <a href="#about" class="text-sm font-medium text-gray-700 hover:text-black transition-colors">About</a>
                 <a href="#services" class="text-sm font-medium text-gray-700 hover:text-black transition-colors">Services</a>
-                <a href="#education" class="text-sm font-medium text-gray-700 hover:text-black transition-colors">Education</a>
                 <a href="#blog" class="text-sm font-medium text-gray-700 hover:text-black transition-colors">Blog</a>
                 <a href="#contact" class="ml-4 px-6 py-2 bg-black text-white rounded-full text-sm font-medium hover:bg-gray-900 transition-all">
                     Contact
@@ -170,7 +158,6 @@
                 <a href="#work" class="px-4 py-2 text-sm font-medium text-gray-700 hover:text-black transition-colors">Works</a>
                 <a href="#about" class="px-4 py-2 text-sm font-medium text-gray-700 hover:text-black transition-colors">About</a>
                 <a href="#services" class="px-4 py-2 text-sm font-medium text-gray-700 hover:text-black transition-colors">Services</a>
-                <a href="#education" class="px-4 py-2 text-sm font-medium text-gray-700 hover:text-black transition-colors">Education</a>
                 <a href="#blog" class="px-4 py-2 text-sm font-medium text-gray-700 hover:text-black transition-colors">Blog</a>
                 <a href="#contact" class="mt-2 px-6 py-2 bg-black text-white rounded-full text-sm font-medium text-center">Contact</a>
             </div>
@@ -508,374 +495,6 @@
         </div>
     </section>
 
-    <!-- Education Section -->
-    <section id="education" class="py-20 md:py-28 px-4 md:px-8 bg-white">
-        <div class="max-w-6xl mx-auto">
-            <!-- Section Header -->
-            <div class="text-center mb-16 animate-fade-in-up">
-                <h2 class="text-4xl md:text-5xl font-bold text-black mb-4">
-                    EDUCATION & QUALIFICATIONS
-                </h2>
-                <p class="text-xl text-gray-600 max-w-2xl mx-auto">
-                    Academic foundation and professional development that shaped my expertise.
-                </p>
-            </div>
-
-            <!-- Education Timeline -->
-            <div class="max-w-4xl mx-auto">
-                <!-- Education Item 1 -->
-                <div class="flex gap-6 mb-12 animate-fade-in-up delay-100">
-                    <div class="flex flex-col items-center">
-                        <div class="w-12 h-12 bg-gradient-to-br from-orange-500 to-orange-600 rounded-full flex items-center justify-center text-white font-bold text-lg">
-                            1
-                        </div>
-                        <div class="w-1 h-32 bg-gradient-to-b from-orange-500 to-orange-200 mt-4"></div>
-                    </div>
-                    <div class="pb-12">
-                        <div class="p-6 bg-gradient-to-br from-orange-50 to-white rounded-2xl border border-orange-200 hover:border-orange-400 hover:shadow-lg transition-all">
-                            <div class="flex items-start justify-between mb-2">
-                                <div>
-                                    <h3 class="text-2xl font-bold text-black">MBA in Business Management</h3>
-                                    <p class="text-orange-600 font-semibold mt-1">Harvard Business School</p>
-                                </div>
-                                <span class="px-4 py-2 bg-orange-100 text-orange-600 rounded-full text-sm font-semibold">2018 - 2020</span>
-                            </div>
-                            <p class="text-gray-700 mt-3">Specialized in Strategic Management and Entrepreneurship with focus on digital transformation and market innovation.</p>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Education Item 2 -->
-                <div class="flex gap-6 mb-12 animate-fade-in-up delay-200">
-                    <div class="flex flex-col items-center">
-                        <div class="w-12 h-12 bg-gradient-to-br from-orange-500 to-orange-600 rounded-full flex items-center justify-center text-white font-bold text-lg">
-                            2
-                        </div>
-                        <div class="w-1 h-32 bg-gradient-to-b from-orange-500 to-orange-200 mt-4"></div>
-                    </div>
-                    <div class="pb-12">
-                        <div class="p-6 bg-gradient-to-br from-orange-50 to-white rounded-2xl border border-orange-200 hover:border-orange-400 hover:shadow-lg transition-all">
-                            <div class="flex items-start justify-between mb-2">
-                                <div>
-                                    <h3 class="text-2xl font-bold text-black">Bachelor of Science in Economics</h3>
-                                    <p class="text-orange-600 font-semibold mt-1">Stanford University</p>
-                                </div>
-                                <span class="px-4 py-2 bg-orange-100 text-orange-600 rounded-full text-sm font-semibold">2014 - 2018</span>
-                            </div>
-                            <p class="text-gray-700 mt-3">Comprehensive study in economic theory, business analytics, and international markets with honors distinction.</p>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Education Item 3 -->
-                <div class="flex gap-6 animate-fade-in-up delay-300">
-                    <div class="flex flex-col items-center">
-                        <div class="w-12 h-12 bg-gradient-to-br from-orange-500 to-orange-600 rounded-full flex items-center justify-center text-white font-bold text-lg">
-                            3
-                        </div>
-                    </div>
-                    <div>
-                        <div class="p-6 bg-gradient-to-br from-orange-50 to-white rounded-2xl border border-orange-200 hover:border-orange-400 hover:shadow-lg transition-all">
-                            <div class="flex items-start justify-between mb-2">
-                                <div>
-                                    <h3 class="text-2xl font-bold text-black">Professional Certifications</h3>
-                                    <p class="text-orange-600 font-semibold mt-1">PMP & Agile Certified Practitioner</p>
-                                </div>
-                                <span class="px-4 py-2 bg-orange-100 text-orange-600 rounded-full text-sm font-semibold">2019 - Present</span>
-                            </div>
-                            <p class="text-gray-700 mt-3">Project Management Professional (PMP) and Agile Certified Practitioner (ACP) certifications from PMI.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Certificate Section with Featured Images -->
-    <section id="certificates" class="py-20 md:py-28 px-4 md:px-8 bg-gray-50">
-        <div class="max-w-6xl mx-auto">
-            <!-- Section Header -->
-            <div class="text-center mb-16 animate-fade-in-up">
-                <h2 class="text-4xl md:text-5xl font-bold text-black mb-4">
-                    CERTIFICATIONS & ACHIEVEMENTS
-                </h2>
-                <p class="text-xl text-gray-600 max-w-2xl mx-auto">
-                    Industry-recognized credentials and professional accomplishments.
-                </p>
-            </div>
-
-            <!-- Certificate Grid -->
-            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-                <!-- Certificate 1 -->
-                <div class="group card-hover animate-fade-in-up delay-100">
-                    <div class="bg-white rounded-2xl overflow-hidden border border-gray-200 h-full hover:border-orange-300 transition-all">
-                        <div class="relative overflow-hidden h-48 bg-gradient-to-br from-blue-100 to-blue-200">
-                            <img src="/placeholder.svg?height=200&width=300" alt="PMP Certificate" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300">
-                        </div>
-                        <div class="p-6">
-                            <div class="flex items-start justify-between mb-2">
-                                <div>
-                                    <h3 class="text-lg font-bold text-black">PMP Certification</h3>
-                                    <p class="text-sm text-orange-600 font-semibold">Project Management Institute</p>
-                                </div>
-                                <svg class="w-5 h-5 text-orange-500" fill="currentColor" viewBox="0 0 24 24">
-                                    <path d="M9 12l2 2 4-4m7 0a9 9 0 11-18 0 9 9 0 0118 0z"></path>
-                                </svg>
-                            </div>
-                            <p class="text-gray-600 text-sm mb-4">Project Management Professional credential certifying expertise in project leadership and delivery.</p>
-                            <p class="text-xs text-gray-500">Issued: 2019 | Expires: 2026</p>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Certificate 2 -->
-                <div class="group card-hover animate-fade-in-up delay-200">
-                    <div class="bg-white rounded-2xl overflow-hidden border border-gray-200 h-full hover:border-orange-300 transition-all">
-                        <div class="relative overflow-hidden h-48 bg-gradient-to-br from-green-100 to-green-200">
-                            <img src="/placeholder.svg?height=200&width=300" alt="Agile Certificate" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300">
-                        </div>
-                        <div class="p-6">
-                            <div class="flex items-start justify-between mb-2">
-                                <div>
-                                    <h3 class="text-lg font-bold text-black">ACP Certification</h3>
-                                    <p class="text-sm text-orange-600 font-semibold">Project Management Institute</p>
-                                </div>
-                                <svg class="w-5 h-5 text-orange-500" fill="currentColor" viewBox="0 0 24 24">
-                                    <path d="M9 12l2 2 4-4m7 0a9 9 0 11-18 0 9 9 0 0118 0z"></path>
-                                </svg>
-                            </div>
-                            <p class="text-gray-600 text-sm mb-4">Agile Certified Practitioner demonstrating knowledge of agile methodologies and frameworks.</p>
-                            <p class="text-xs text-gray-500">Issued: 2019 | Expires: 2025</p>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Certificate 3 -->
-                <div class="group card-hover animate-fade-in-up delay-300">
-                    <div class="bg-white rounded-2xl overflow-hidden border border-gray-200 h-full hover:border-orange-300 transition-all">
-                        <div class="relative overflow-hidden h-48 bg-gradient-to-br from-purple-100 to-purple-200">
-                            <img src="/placeholder.svg?height=200&width=300" alt="Six Sigma Certificate" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300">
-                        </div>
-                        <div class="p-6">
-                            <div class="flex items-start justify-between mb-2">
-                                <div>
-                                    <h3 class="text-lg font-bold text-black">Six Sigma Green Belt</h3>
-                                    <p class="text-sm text-orange-600 font-semibold">American Society for Quality</p>
-                                </div>
-                                <svg class="w-5 h-5 text-orange-500" fill="currentColor" viewBox="0 0 24 24">
-                                    <path d="M9 12l2 2 4-4m7 0a9 9 0 11-18 0 9 9 0 0118 0z"></path>
-                                </svg>
-                            </div>
-                            <p class="text-gray-600 text-sm mb-4">Six Sigma Green Belt certification in process improvement and operational excellence methodology.</p>
-                            <p class="text-xs text-gray-500">Issued: 2018 | Expires: 2026</p>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Certificate 4 -->
-                <div class="group card-hover animate-fade-in-up delay-400">
-                    <div class="bg-white rounded-2xl overflow-hidden border border-gray-200 h-full hover:border-orange-300 transition-all">
-                        <div class="relative overflow-hidden h-48 bg-gradient-to-br from-red-100 to-red-200">
-                            <img src="/placeholder.svg?height=200&width=300" alt="Marketing Certificate" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300">
-                        </div>
-                        <div class="p-6">
-                            <div class="flex items-start justify-between mb-2">
-                                <div>
-                                    <h3 class="text-lg font-bold text-black">Digital Marketing</h3>
-                                    <p class="text-sm text-orange-600 font-semibold">Google & HubSpot Academy</p>
-                                </div>
-                                <svg class="w-5 h-5 text-orange-500" fill="currentColor" viewBox="0 0 24 24">
-                                    <path d="M9 12l2 2 4-4m7 0a9 9 0 11-18 0 9 9 0 0118 0z"></path>
-                                </svg>
-                            </div>
-                            <p class="text-gray-600 text-sm mb-4">Google Analytics and HubSpot Digital Marketing certified professional for modern marketing strategies.</p>
-                            <p class="text-xs text-gray-500">Issued: 2020 | Active</p>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Certificate 5 -->
-                <div class="group card-hover animate-fade-in-up delay-500">
-                    <div class="bg-white rounded-2xl overflow-hidden border border-gray-200 h-full hover:border-orange-300 transition-all">
-                        <div class="relative overflow-hidden h-48 bg-gradient-to-br from-yellow-100 to-yellow-200">
-                            <img src="/placeholder.svg?height=200&width=300" alt="Leadership Certificate" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300">
-                        </div>
-                        <div class="p-6">
-                            <div class="flex items-start justify-between mb-2">
-                                <div>
-                                    <h3 class="text-lg font-bold text-black">Leadership Excellence</h3>
-                                    <p class="text-sm text-orange-600 font-semibold">Center for Creative Leadership</p>
-                                </div>
-                                <svg class="w-5 h-5 text-orange-500" fill="currentColor" viewBox="0 0 24 24">
-                                    <path d="M9 12l2 2 4-4m7 0a9 9 0 11-18 0 9 9 0 0118 0z"></path>
-                                </svg>
-                            </div>
-                            <p class="text-gray-600 text-sm mb-4">Advanced leadership program focused on strategic thinking and organizational development.</p>
-                            <p class="text-xs text-gray-500">Issued: 2021 | Active</p>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Certificate 6 -->
-                <div class="group card-hover animate-fade-in-up delay-600">
-                    <div class="bg-white rounded-2xl overflow-hidden border border-gray-200 h-full hover:border-orange-300 transition-all">
-                        <div class="relative overflow-hidden h-48 bg-gradient-to-br from-indigo-100 to-indigo-200">
-                            <img src="/placeholder.svg?height=200&width=300" alt="Data Analytics Certificate" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300">
-                        </div>
-                        <div class="p-6">
-                            <div class="flex items-start justify-between mb-2">
-                                <div>
-                                    <h3 class="text-lg font-bold text-black">Data Analytics</h3>
-                                    <p class="text-sm text-orange-600 font-semibold">Coursera & IBM</p>
-                                </div>
-                                <svg class="w-5 h-5 text-orange-500" fill="currentColor" viewBox="0 0 24 24">
-                                    <path d="M9 12l2 2 4-4m7 0a9 9 0 11-18 0 9 9 0 0118 0z"></path>
-                                </svg>
-                            </div>
-                            <p class="text-gray-600 text-sm mb-4">Professional data analytics certification covering business intelligence and data-driven decision making.</p>
-                            <p class="text-xs text-gray-500">Issued: 2021 | Active</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Brand Collaboration Slider Section -->
-    <section id="brands" class="py-20 md:py-28 px-4 md:px-8 bg-white">
-        <div class="max-w-6xl mx-auto">
-            <!-- Section Header -->
-            <div class="text-center mb-16 animate-fade-in-up">
-                <h2 class="text-4xl md:text-5xl font-bold text-black mb-4">
-                    BRANDS & COLLABORATIONS
-                </h2>
-                <p class="text-xl text-gray-600 max-w-2xl mx-auto">
-                    Trusted by industry-leading organizations and forward-thinking companies.
-                </p>
-            </div>
-
-            <style>
-                /* Hide scrollbar */
-                .no-scrollbar::-webkit-scrollbar {
-                    display: none;
-                }
-                .no-scrollbar {
-                    -ms-overflow-style: none;
-                    scrollbar-width: none;
-                }
-            </style>
-
-            <!-- Brand Slider Container -->
-            <div class="relative">
-
-                <div class="overflow-hidden">
-                    <div class="brand-slider flex gap-8 md:gap-12 overflow-x-auto scroll-smooth no-scrollbar">
-
-                        <!-- Brand Item -->
-                        <div class="flex-shrink-0 w-40 h-32 flex items-center justify-center bg-gray-50 rounded-2xl border border-gray-200 hover:border-orange-400 hover:shadow-lg transition-all p-6">
-                            <svg class="w-20 h-20 text-gray-400" viewBox="0 0 100 100">
-                                <circle cx="50" cy="50" r="45" stroke="currentColor" stroke-width="2" fill="none"/>
-                                <text x="50" y="55" text-anchor="middle" class="text-xs font-bold" fill="currentColor">BRAND 1</text>
-                            </svg>
-                        </div>
-                        <!-- Brand Item -->
-                        <div class="flex-shrink-0 w-40 h-32 flex items-center justify-center bg-gray-50 rounded-2xl border border-gray-200 hover:border-orange-400 hover:shadow-lg transition-all p-6">
-                            <svg class="w-20 h-20 text-gray-400" viewBox="0 0 100 100">
-                                <circle cx="50" cy="50" r="45" stroke="currentColor" stroke-width="2" fill="none"/>
-                                <text x="50" y="55" text-anchor="middle" class="text-xs font-bold" fill="currentColor">BRAND 1</text>
-                            </svg>
-                        </div>
-                        <!-- Brand Item -->
-                        <div class="flex-shrink-0 w-40 h-32 flex items-center justify-center bg-gray-50 rounded-2xl border border-gray-200 hover:border-orange-400 hover:shadow-lg transition-all p-6">
-                            <svg class="w-20 h-20 text-gray-400" viewBox="0 0 100 100">
-                                <circle cx="50" cy="50" r="45" stroke="currentColor" stroke-width="2" fill="none"/>
-                                <text x="50" y="55" text-anchor="middle" class="text-xs font-bold" fill="currentColor">BRAND 1</text>
-                            </svg>
-                        </div>
-                        <!-- Brand Item -->
-                        <div class="flex-shrink-0 w-40 h-32 flex items-center justify-center bg-gray-50 rounded-2xl border border-gray-200 hover:border-orange-400 hover:shadow-lg transition-all p-6">
-                            <svg class="w-20 h-20 text-gray-400" viewBox="0 0 100 100">
-                                <circle cx="50" cy="50" r="45" stroke="currentColor" stroke-width="2" fill="none"/>
-                                <text x="50" y="55" text-anchor="middle" class="text-xs font-bold" fill="currentColor">BRAND 1</text>
-                            </svg>
-                        </div>
-                        <!-- Brand Item -->
-                        <div class="flex-shrink-0 w-40 h-32 flex items-center justify-center bg-gray-50 rounded-2xl border border-gray-200 hover:border-orange-400 hover:shadow-lg transition-all p-6">
-                            <svg class="w-20 h-20 text-gray-400" viewBox="0 0 100 100">
-                                <circle cx="50" cy="50" r="45" stroke="currentColor" stroke-width="2" fill="none"/>
-                                <text x="50" y="55" text-anchor="middle" class="text-xs font-bold" fill="currentColor">BRAND 1</text>
-                            </svg>
-                        </div>
-
-                        <div class="flex-shrink-0 w-40 h-32 flex items-center justify-center bg-gray-50 rounded-2xl border border-gray-200 hover:border-orange-400 hover:shadow-lg transition-all p-6">
-                            <svg class="w-20 h-20 text-gray-400" viewBox="0 0 100 100">
-                                <rect x="10" y="10" width="80" height="80" stroke="currentColor" stroke-width="2" fill="none"/>
-                                <text x="50" y="55" text-anchor="middle" class="text-xs font-bold" fill="currentColor">BRAND 2</text>
-                            </svg>
-                        </div>
-
-                        <div class="flex-shrink-0 w-40 h-32 flex items-center justify-center bg-gray-50 rounded-2xl border border-gray-200 hover:border-orange-400 hover:shadow-lg transition-all p-6">
-                            <svg class="w-20 h-20 text-gray-400" viewBox="0 0 100 100">
-                                <polygon points="50,10 90,90 10,90" stroke="currentColor" stroke-width="2" fill="none"/>
-                                <text x="50" y="65" text-anchor="middle" class="text-xs font-bold" fill="currentColor">BRAND 3</text>
-                            </svg>
-                        </div>
-
-                        <div class="flex-shrink-0 w-40 h-32 flex items-center justify-center bg-gray-50 rounded-2xl border border-gray-200 hover:border-orange-400 hover:shadow-lg transition-all p-6">
-                            <svg class="w-20 h-20 text-gray-400" viewBox="0 0 100 100">
-                                <polygon points="50,10 90,90 10,90" stroke="currentColor" stroke-width="2" fill="none"/>
-                                <text x="50" y="65" text-anchor="middle" class="text-xs font-bold" fill="currentColor">BRAND 3</text>
-                            </svg>
-                        </div>
-
-                        <div class="flex-shrink-0 w-40 h-32 flex items-center justify-center bg-gray-50 rounded-2xl border border-gray-200 hover:border-orange-400 hover:shadow-lg transition-all p-6">
-                            <svg class="w-20 h-20 text-gray-400" viewBox="0 0 100 100">
-                                <circle cx="30" cy="30" r="20" stroke="currentColor" stroke-width="2" fill="none"/>
-                                <circle cx="70" cy="70" r="20" stroke="currentColor" stroke-width="2" fill="none"/>
-                                <text x="50" y="55" text-anchor="middle" class="text-xs font-bold" fill="currentColor">BRAND 4</text>
-                            </svg>
-                        </div>
-
-                        <div class="flex-shrink-0 w-40 h-32 flex items-center justify-center bg-gray-50 rounded-2xl border border-gray-200 hover:border-orange-400 hover:shadow-lg transition-all p-6">
-                            <svg class="w-20 h-20 text-gray-400" viewBox="0 0 100 100">
-                                <path d="M50,10 L90,40 L70,90 L30,90 L10,40 Z" stroke="currentColor" stroke-width="2" fill="none"/>
-                                <text x="50" y="55" text-anchor="middle" class="text-xs font-bold" fill="currentColor">BRAND 5</text>
-                            </svg>
-                        </div>
-
-                        <div class="flex-shrink-0 w-40 h-32 flex items-center justify-center bg-gray-50 rounded-2xl border border-gray-200 hover:border-orange-400 hover:shadow-lg transition-all p-6">
-                            <svg class="w-20 h-20 text-gray-400" viewBox="0 0 100 100">
-                                <circle cx="50" cy="50" r="40" stroke="currentColor" stroke-width="2" fill="none"/>
-                                <circle cx="50" cy="50" r="25" stroke="currentColor" stroke-width="2" fill="none"/>
-                                <circle cx="50" cy="50" r="10" stroke="currentColor" stroke-width="2" fill="none"/>
-                            </svg>
-                        </div>
-
-                    </div>
-                </div>
-
-
-
-                <!-- Left Arrow -->
-                <button class="brand-slider-prev absolute left-0 top-1/2 -translate-y-1/2 -translate-x-4 md:-translate-x-8 z-10 p-2 bg-orange-500 text-white rounded-full hover:bg-orange-600 transition-colors shadow-lg">
-                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path>
-                    </svg>
-                </button>
-
-                <!-- Right Arrow -->
-                <button class="brand-slider-next absolute right-0 top-1/2 -translate-y-1/2 translate-x-4 md:translate-x-8 z-10 p-2 bg-orange-500 text-white rounded-full hover:bg-orange-600 transition-colors shadow-lg">
-                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
-                    </svg>
-                </button>
-            </div>
-
-            <!-- Slider Info -->
-            <p class="text-center text-gray-600 mt-12 text-sm">Scroll or use arrows to view more brands • <span class="text-orange-600 font-semibold">6+ partners</span></p>
-        </div>
-    </section>
-
     <!-- Blog section added -->
     <section id="blog" class="py-20 md:py-28 px-4 md:px-8 bg-white">
         <div class="max-w-6xl mx-auto">
@@ -1201,7 +820,6 @@
                     <ul class="space-y-2 text-gray-400 text-sm">
                         <li><a href="#home" class="hover:text-orange-500 transition-colors">Home</a></li>
                         <li><a href="#work" class="hover:text-orange-500 transition-colors">Works</a></li>
-                        <li><a href="#education" class="hover:text-orange-500 transition-colors">Education</a></li>
                         <li><a href="#blog" class="hover:text-orange-500 transition-colors">Blog</a></li>
                         <li><a href="#about" class="hover:text-orange-500 transition-colors">About</a></li>
                     </ul>
@@ -1253,55 +871,7 @@
                 header.classList.remove('scrolled');
             }
         });
-        //
-        // // Brand Slider Logic
-        // const slider = document.querySelector('.brand-slider');
-        // const prevBtn = document.querySelector('.brand-slider-prev');
-        // const nextBtn = document.querySelector('.brand-slider-next');
-        // const slideWidth = document.querySelector('.brand-slider > div').offsetWidth + 32; // Item width + gap
-        //
-        // prevBtn.addEventListener('click', () => {
-        //     slider.scrollBy({
-        //         left: -slideWidth,
-        //         behavior: 'smooth'
-        //     });
-        // });
-        //
-        // nextBtn.addEventListener('click', () => {
-        //     slider.scrollBy({
-        //         left: slideWidth,
-        //         behavior: 'smooth'
-        //     });
-        // });
     </script>
-
-    <script>
-        document.addEventListener('DOMContentLoaded', () => {
-            const slider = document.querySelector('.brand-slider');
-            const prevBtn = document.querySelector('.brand-slider-prev');
-            const nextBtn = document.querySelector('.brand-slider-next');
-
-            const getSlideWidth = () => {
-                const slide = slider.querySelector('div');
-                return slide.offsetWidth + 32;
-            };
-
-            prevBtn.addEventListener('click', () => {
-                slider.scrollBy({
-                    left: -getSlideWidth(),
-                    behavior: 'smooth'
-                });
-            });
-
-            nextBtn.addEventListener('click', () => {
-                slider.scrollBy({
-                    left: getSlideWidth(),
-                    behavior: 'smooth'
-                });
-            });
-        });
-    </script>
-
 
 </body>
 </html>

@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GLP-1 Market Expansion - Madison | Project Case Study</title>
+    <meta name="description" content="Comprehensive case study on market analysis and go-to-market strategy for GLP-1 therapeutics expansion.">
+    <meta name="theme-color" content="#f97316">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            font-family: 'Inter', system-ui, -apple-system, sans-serif;
+        }
+
+        h1, h2, h3, h4, h5, h6 {
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 700;
+            letter-spacing: -0.5px;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        @keyframes fadeInUp {
+            from { opacity: 0; transform: translateY(30px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        .animate-fade-in-up { animation: fadeInUp 0.6s ease-out forwards; opacity: 0; }
+        .animate-fade-in { animation: fadeIn 0.6s ease-out forwards; opacity: 0; }
+        .delay-100 { animation-delay: 0.1s; }
+        .delay-200 { animation-delay: 0.2s; }
+        .delay-300 { animation-delay: 0.3s; }
+
+        header { transition: all 0.5s ease; }
+        header.scrolled {
+            @apply shadow-lg backdrop-blur-xl bg-white/98;
+            border-bottom: 1px solid rgb(245, 245, 245);
+        }
+
+        .hero-gradient {
+            background: linear-gradient(135deg, #fffbf0 0%, #fef5e7 50%, #fce4d6 100%);
+        }
+
+        .mobile-menu {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease;
+        }
+
+        .mobile-menu.active {
+            max-height: 500px;
+        }
+
+        .stat-card {
+            transition: all 0.3s ease;
+        }
+
+        .stat-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 12px 24px rgba(249, 115, 22, 0.15);
+        }
+
+        .timeline-item::before {
+            content: '';
+            position: absolute;
+            left: -28px;
+            top: 8px;
+            width: 12px;
+            height: 12px;
+            background: linear-gradient(135deg, #f97316, #fb923c);
+            border-radius: 50%;
+            border: 3px solid white;
+            box-shadow: 0 2px 8px rgba(249, 115, 22, 0.3);
+        }
+    </style>
+</head>
+<body class="bg-white text-black">
+
+    <!-- Header -->
+    <header id="header" class="fixed top-0 w-full z-50 bg-white/50 backdrop-blur-md border-b border-gray-100">
+        <nav class="max-w-7xl mx-auto px-4 sm:px-6 py-4 flex items-center justify-between">
+            <a href="index.html" class="text-2xl font-light italic">Madison.</a>
+            
+            <div class="hidden md:flex items-center gap-8">
+                <a href="index.html#home" class="text-sm font-medium text-gray-700 hover:text-black transition-colors">Home</a>
+                <a href="index.html#work" class="text-sm font-medium text-orange-600 transition-colors">Works</a>
+                <a href="index.html#about" class="text-sm font-medium text-gray-700 hover:text-black transition-colors">About</a>
+                <a href="index.html#services" class="text-sm font-medium text-gray-700 hover:text-black transition-colors">Services</a>
+                <a href="index.html#blog" class="text-sm font-medium text-gray-700 hover:text-black transition-colors">Blog</a>
+                <a href="index.html#contact" class="ml-4 px-6 py-2 bg-black text-white rounded-full text-sm font-medium hover:bg-gray-900 transition-all">
+                    Contact
+                </a>
+            </div>
+
+            <button id="mobile-menu-btn" class="md:hidden flex flex-col gap-1.5 p-2">
+                <span class="w-6 h-0.5 bg-black rounded transition-all"></span>
+                <span class="w-6 h-0.5 bg-black rounded transition-all"></span>
+                <span class="w-6 h-0.5 bg-black rounded transition-all"></span>
+            </button>
+        </nav>
+
+        <div id="mobile-menu" class="mobile-menu md:hidden bg-white border-t border-gray-200">
+            <div class="flex flex-col gap-2 p-4">
+                <a href="index.html#home" class="px-4 py-2 text-sm font-medium text-gray-700 hover:text-black transition-colors">Home</a>
+                <a href="index.html#work" class="px-4 py-2 text-sm font-medium text-orange-600">Works</a>
+                <a href="index.html#about" class="px-4 py-2 text-sm font-medium text-gray-700 hover:text-black transition-colors">About</a>
+                <a href="index.html#services" class="px-4 py-2 text-sm font-medium text-gray-700 hover:text-black transition-colors">Services</a>
+                <a href="index.html#blog" class="px-4 py-2 text-sm font-medium text-gray-700 hover:text-black transition-colors">Blog</a>
+                <a href="index.html#contact" class="mt-2 px-6 py-2 bg-black text-white rounded-full text-sm font-medium text-center">Contact</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="pt-32 pb-8 md:pt-40 md:pb-12 px-4 md:px-8 hero-gradient relative overflow-hidden">
+        <div class="max-w-5xl mx-auto">
+            <!-- Back Button -->
+            <a href="index.html#work" class="inline-flex items-center text-orange-600 hover:text-orange-700 font-medium mb-8 group animate-fade-in">
+                <svg class="w-5 h-5 mr-2 group-hover:-translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path>
+                </svg>
+                Back to Projects
+            </a>
+
+            <!-- Project Header -->
+            <div class="animate-fade-in-up">
+                <div class="flex flex-wrap gap-3 mb-6">
+                    <span class="px-4 py-1.5 bg-orange-100 text-orange-700 text-sm font-semibold rounded-full">Market Analysis</span>
+                    <span class="px-4 py-1.5 bg-orange-100 text-orange-700 text-sm font-semibold rounded-full">Go-to-Market</span>
+                    <span class="px-4 py-1.5 bg-gray-100 text-gray-700 text-sm font-semibold rounded-full">Healthcare</span>
+                </div>
+                <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight mb-6 text-black">
+                    GLP-1 Market <span class="text-orange-600">Expansion</span>
+                </h1>
+                <p class="text-lg md:text-xl text-gray-700 max-w-3xl leading-relaxed">
+                    Led comprehensive market analysis and go-to-market strategy for GLP-1 therapeutics, resulting in 40% provider adoption increase across multi-state territory.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Image -->
+    <section class="py-8 px-4 md:px-8">
+        <div class="max-w-6xl mx-auto animate-fade-in-up delay-100">
+            <div class="relative rounded-2xl overflow-hidden shadow-2xl">
+                <img src="/placeholder.svg?height=600&width=1200" 
+                     alt="GLP-1 Market Expansion Project" 
+                     class="w-full h-64 md:h-96 lg:h-[500px] object-cover">
+                <div class="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="py-12 px-4 md:px-8">
+        <div class="max-w-5xl mx-auto">
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
+                <div class="stat-card bg-white rounded-xl p-6 border border-gray-200 text-center animate-fade-in-up delay-100">
+                    <div class="text-4xl md:text-5xl font-bold text-orange-600 mb-2">40%</div>
+                    <div class="text-sm text-gray-600 font-medium">Adoption Growth</div>
+                </div>
+                <div class="stat-card bg-white rounded-xl p-6 border border-gray-200 text-center animate-fade-in-up delay-200">
+                    <div class="text-4xl md:text-5xl font-bold text-orange-600 mb-2">12M</div>
+                    <div class="text-sm text-gray-600 font-medium">Patients Reached</div>
+                </div>
+                <div class="stat-card bg-white rounded-xl p-6 border border-gray-200 text-center animate-fade-in-up delay-300">
+                    <div class="text-4xl md:text-5xl font-bold text-orange-600 mb-2">6</div>
+                    <div class="text-sm text-gray-600 font-medium">Month Timeline</div>
+                </div>
+                <div class="stat-card bg-white rounded-xl p-6 border border-gray-200 text-center animate-fade-in-up delay-300">
+                    <div class="text-4xl md:text-5xl font-bold text-orange-600 mb-2">200+</div>
+                    <div class="text-sm text-gray-600 font-medium">Providers Engaged</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Project Details -->
+    <section class="py-16 px-4 md:px-8">
+        <div class="max-w-5xl mx-auto">
+            <div class="grid md:grid-cols-3 gap-12">
+                
+                <!-- Main Content -->
+                <div class="md:col-span-2 space-y-12">
+                    
+                    <!-- Overview -->
+                    <div class="animate-fade-in-up">
+                        <h2 class="text-2xl md:text-3xl font-bold text-black mb-6">Project Overview</h2>
+                        <p class="text-gray-700 leading-relaxed mb-4">
+                            The GLP-1 therapeutics market represents one of the fastest-growing segments in healthcare, with significant implications for patient outcomes and provider practices. This project focused on developing and executing a comprehensive market expansion strategy to increase provider adoption of innovative GLP-1 treatments.
+                        </p>
+                        <p class="text-gray-700 leading-relaxed">
+                            Working closely with cross-functional teams, I led the market analysis efforts, identified key opportunity areas, and developed targeted engagement strategies that resulted in measurable adoption increases across our target territories.
+                        </p>
+                    </div>
+
+                    <!-- Challenge -->
+                    <div class="animate-fade-in-up delay-100">
+                        <h2 class="text-2xl md:text-3xl font-bold text-black mb-6">The Challenge</h2>
+                        <div class="bg-gray-50 rounded-xl p-6 border border-gray-200">
+                            <ul class="space-y-4">
+                                <li class="flex items-start gap-4">
+                                    <div class="w-8 h-8 bg-orange-100 rounded-lg flex items-center justify-center flex-shrink-0 mt-0.5">
+                                        <svg class="w-4 h-4 text-orange-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"></path>
+                                        </svg>
+                                    </div>
+                                    <div>
+                                        <h4 class="font-semibold text-black">Market Complexity</h4>
+                                        <p class="text-gray-600 text-sm">Rapidly evolving competitive landscape with multiple new entrants and shifting payer dynamics.</p>
+                                    </div>
+                                </li>
+                                <li class="flex items-start gap-4">
+                                    <div class="w-8 h-8 bg-orange-100 rounded-lg flex items-center justify-center flex-shrink-0 mt-0.5">
+                                        <svg class="w-4 h-4 text-orange-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"></path>
+                                        </svg>
+                                    </div>
+                                    <div>
+                                        <h4 class="font-semibold text-black">Provider Education Gap</h4>
+                                        <p class="text-gray-600 text-sm">Limited understanding among providers of optimal patient selection and treatment protocols.</p>
+                                    </div>
+                                </li>
+                                <li class="flex items-start gap-4">
+                                    <div class="w-8 h-8 bg-orange-100 rounded-lg flex items-center justify-center flex-shrink-0 mt-0.5">
+                                        <svg class="w-4 h-4 text-orange-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"></path>
+                                        </svg>
+                                    </div>
+                                    <div>
+                                        <h4 class="font-semibold text-black">Access Barriers</h4>
+                                        <p class="text-gray-600 text-sm">Complex prior authorization requirements and varying coverage across different payer types.</p>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Approach -->
+                    <div class="animate-fade-in-up delay-200">
+                        <h2 class="text-2xl md:text-3xl font-bold text-black mb-6">Strategic Approach</h2>
+                        <div class="relative border-l-2 border-orange-200 pl-8 ml-4 space-y-8">
+                            <div class="timeline-item relative">
+                                <h4 class="font-semibold text-black mb-2">Market Intelligence Gathering</h4>
+                                <p class="text-gray-600 text-sm">Conducted comprehensive analysis of market dynamics, competitive positioning, and provider sentiment across target territories.</p>
+                            </div>
+                            <div class="timeline-item relative">
+                                <h4 class="font-semibold text-black mb-2">Segmentation & Targeting</h4>
+                                <p class="text-gray-600 text-sm">Developed provider segmentation model to identify high-potential prescribers and prioritize engagement efforts.</p>
+                            </div>
+                            <div class="timeline-item relative">
+                                <h4 class="font-semibold text-black mb-2">Education Program Development</h4>
+                                <p class="text-gray-600 text-sm">Created tailored clinical education materials and training programs addressing key knowledge gaps.</p>
+                            </div>
+                            <div class="timeline-item relative">
+                                <h4 class="font-semibold text-black mb-2">Go-to-Market Execution</h4>
+                                <p class="text-gray-600 text-sm">Launched multi-channel engagement campaign with coordinated sales, medical, and market access activities.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Results -->
+                    <div class="animate-fade-in-up delay-300">
+                        <h2 class="text-2xl md:text-3xl font-bold text-black mb-6">Results & Impact</h2>
+                        <div class="grid sm:grid-cols-2 gap-6">
+                            <div class="bg-gradient-to-br from-orange-50 to-white rounded-xl p-6 border border-orange-200">
+                                <div class="w-12 h-12 bg-orange-500 rounded-xl flex items-center justify-center mb-4">
+                                    <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6"></path>
+                                    </svg>
+                                </div>
+                                <h4 class="font-semibold text-black mb-2">Provider Adoption</h4>
+                                <p class="text-gray-600 text-sm">Achieved 40% increase in provider adoption rates within 6 months of program launch.</p>
+                            </div>
+                            <div class="bg-gradient-to-br from-orange-50 to-white rounded-xl p-6 border border-orange-200">
+                                <div class="w-12 h-12 bg-orange-600 rounded-xl flex items-center justify-center mb-4">
+                                    <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"></path>
+                                    </svg>
+                                </div>
+                                <h4 class="font-semibold text-black mb-2">Patient Reach</h4>
+                                <p class="text-gray-600 text-sm">Expanded access to 12 million patients through improved provider network coverage.</p>
+                            </div>
+                            <div class="bg-gradient-to-br from-orange-50 to-white rounded-xl p-6 border border-orange-200">
+                                <div class="w-12 h-12 bg-orange-500 rounded-xl flex items-center justify-center mb-4">
+                                    <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                                    </svg>
+                                </div>
+                                <h4 class="font-semibold text-black mb-2">Revenue Impact</h4>
+                                <p class="text-gray-600 text-sm">Generated $15M+ in new patient revenue through expanded market penetration.</p>
+                            </div>
+                            <div class="bg-gradient-to-br from-orange-50 to-white rounded-xl p-6 border border-orange-200">
+                                <div class="w-12 h-12 bg-orange-600 rounded-xl flex items-center justify-center mb-4">
+                                    <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                                    </svg>
+                                </div>
+                                <h4 class="font-semibold text-black mb-2">Market Leadership</h4>
+                                <p class="text-gray-600 text-sm">Established as preferred partner among 200+ healthcare providers in target territories.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Sidebar -->
+                <div class="md:col-span-1">
+                    <div class="sticky top-28 space-y-6 animate-fade-in-up delay-200">
+                        <!-- Project Info Card -->
+                        <div class="bg-gray-50 rounded-xl p-6 border border-gray-200">
+                            <h4 class="font-bold text-black mb-4">Project Info</h4>
+                            <div class="space-y-4">
+                                <div>
+                                    <div class="text-xs font-semibold text-gray-500 mb-1">Duration</div>
+                                    <div class="text-black font-medium">6 Months</div>
+                                </div>
+                                <div>
+                                    <div class="text-xs font-semibold text-gray-500 mb-1">Team Size</div>
+                                    <div class="text-black font-medium">8 Members</div>
+                                </div>
+                                <div>
+                                    <div class="text-xs font-semibold text-gray-500 mb-1">Status</div>
+                                    <div class="text-black font-medium">Completed</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Skills Used -->
+                        <div class="bg-gray-50 rounded-xl p-6 border border-gray-200">
+                            <h4 class="font-bold text-black mb-4">Skills</h4>
+                            <div class="flex flex-wrap gap-2">
+                                <span class="px-3 py-1 bg-orange-100 text-orange-700 text-xs font-semibold rounded-full">Market Analysis</span>
+                                <span class="px-3 py-1 bg-orange-100 text-orange-700 text-xs font-semibold rounded-full">Strategy</span>
+                                <span class="px-3 py-1 bg-orange-100 text-orange-700 text-xs font-semibold rounded-full">Go-to-Market</span>
+                                <span class="px-3 py-1 bg-gray-100 text-gray-700 text-xs font-semibold rounded-full">Healthcare</span>
+                                <span class="px-3 py-1 bg-gray-100 text-gray-700 text-xs font-semibold rounded-full">Leadership</span>
+                            </div>
+                        </div>
+
+                        <!-- Next Project CTA -->
+                        <div class="bg-gradient-to-br from-orange-500 to-orange-600 rounded-xl p-6 border border-orange-600">
+                            <h4 class="font-bold text-white mb-3">Ready for Your Next Project?</h4>
+                            <p class="text-white/90 text-sm mb-4">Let's discuss how I can drive growth and strategy for your business.</p>
+                            <a href="index.html#contact" class="inline-flex items-center text-white font-semibold text-sm hover:text-white/80 transition-colors">
+                                Get in Touch
+                                <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6"></path>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Related Projects -->
+    <section class="py-16 md:py-24 px-4 md:px-8 bg-gray-50">
+        <div class="max-w-6xl mx-auto">
+            <div class="text-center mb-12 animate-fade-in-up">
+                <h2 class="text-3xl md:text-4xl font-bold text-black mb-3">Other Projects</h2>
+                <p class="text-gray-600">Explore more case studies and success stories</p>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-8">
+                <a href="#" class="group">
+                    <div class="relative rounded-xl overflow-hidden h-64 bg-gradient-to-br from-gray-200 to-gray-300 mb-4 group-hover:shadow-lg transition-all">
+                        <img src="/placeholder.svg?height=300&width=500" alt="Project" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
+                    </div>
+                    <h3 class="font-bold text-black group-hover:text-orange-600 transition-colors mb-1">Product Launch Campaign</h3>
+                    <p class="text-gray-600 text-sm">Go-to-market strategy</p>
+                </a>
+                <a href="#" class="group">
+                    <div class="relative rounded-xl overflow-hidden h-64 bg-gradient-to-br from-gray-200 to-gray-300 mb-4 group-hover:shadow-lg transition-all">
+                        <img src="/placeholder.svg?height=300&width=500" alt="Project" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
+                    </div>
+                    <h3 class="font-bold text-black group-hover:text-orange-600 transition-colors mb-1">Digital Transformation</h3>
+                    <p class="text-gray-600 text-sm">Innovation & optimization</p>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-black text-white py-12 px-4 md:px-8">
+        <div class="max-w-6xl mx-auto">
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8 mb-8">
+                <div>
+                    <a href="index.html" class="text-xl font-light italic text-orange-500">Madison.</a>
+                    <p class="text-gray-400 mt-2">Project Manager & Entrepreneur</p>
+                </div>
+                <div>
+                    <h4 class="font-semibold mb-4">Navigation</h4>
+                    <ul class="space-y-2 text-gray-400 text-sm">
+                        <li><a href="index.html#home" class="hover:text-orange-500 transition-colors">Home</a></li>
+                        <li><a href="index.html#work" class="hover:text-orange-500 transition-colors">Works</a></li>
+                        <li><a href="index.html#blog" class="hover:text-orange-500 transition-colors">Blog</a></li>
+                        <li><a href="index.html#about" class="hover:text-orange-500 transition-colors">About</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-semibold mb-4">Services</h4>
+                    <ul class="space-y-2 text-gray-400 text-sm">
+                        <li><a href="index.html#services" class="hover:text-orange-500 transition-colors">Strategy</a></li>
+                        <li><a href="index.html#services" class="hover:text-orange-500 transition-colors">Management</a></li>
+                        <li><a href="index.html#services" class="hover:text-orange-500 transition-colors">Consulting</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-semibold mb-4">Follow</h4>
+                    <ul class="space-y-2 text-gray-400 text-sm">
+                        <li><a href="#" class="hover:text-orange-500 transition-colors">LinkedIn</a></li>
+                        <li><a href="#" class="hover:text-orange-500 transition-colors">Twitter</a></li>
+                        <li><a href="#" class="hover:text-orange-500 transition-colors">Instagram</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="border-t border-gray-800 pt-8 text-center text-gray-400 text-sm">
+                <p>&copy; 2026 Madison. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        mobileMenuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('active');
+        });
+
+        mobileMenu.querySelectorAll('a').forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.remove('active');
+            });
+        });
+
+        window.addEventListener('scroll', () => {
+            const header = document.querySelector('header');
+            if (window.scrollY > 50) {
+                header.classList.add('scrolled');
+            } else {
+                header.classList.remove('scrolled');
+            }
+        });
+    </script>
+
+</body>
+</html>

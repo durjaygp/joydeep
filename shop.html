@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop | Premium Merchandise & Products</title>
+    <meta name="description" content="Browse and purchase premium merchandise including jewelry, t-shirts, and exclusive products.">
+    <meta name="theme-color" content="#f97316">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            font-family: 'Inter', system-ui, -apple-system, sans-serif;
+        }
+
+        h1, h2, h3, h4, h5, h6 {
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 700;
+            letter-spacing: -0.5px;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        /* Animations */
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .animate-fade-in-up { animation: fadeInUp 0.6s ease-out; }
+        .delay-100 { animation-delay: 0.1s; }
+        .delay-200 { animation-delay: 0.2s; }
+        .delay-300 { animation-delay: 0.3s; }
+        .delay-400 { animation-delay: 0.4s; }
+        .delay-500 { animation-delay: 0.5s; }
+    </style>
+</head>
+<body class="bg-white">
+    <!-- Navigation -->
+    <nav class="sticky top-0 z-50 bg-white/95 backdrop-blur-sm border-b border-gray-100">
+        <div class="max-w-7xl mx-auto px-4 md:px-8 py-4 flex items-center justify-between">
+            <a href="index.html" class="text-2xl font-bold text-black">Madison.</a>
+            <div class="hidden md:flex items-center gap-8">
+                <a href="index.html" class="text-gray-700 hover:text-black transition">Home</a>
+                <a href="#" class="text-gray-700 hover:text-black transition">Shop</a>
+                <a href="blogs.html" class="text-gray-700 hover:text-black transition">Blog</a>
+            </div>
+            <div class="flex items-center gap-4">
+                <button class="relative p-2 hover:bg-gray-100 rounded-full transition">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z"></path>
+                    </svg>
+                    <span class="absolute top-1 right-1 w-5 h-5 bg-orange-500 text-white text-xs rounded-full flex items-center justify-center">0</span>
+                </button>
+                <a href="#contact" class="px-6 py-2 bg-black text-white rounded-full hover:bg-orange-600 transition font-medium">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="pt-20 md:pt-32 pb-16 md:pb-20 px-4 md:px-8 bg-gradient-to-br from-orange-50 to-white">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center animate-fade-in-up">
+                <h1 class="text-5xl md:text-7xl font-bold text-black mb-4 leading-tight">
+                    Premium<br />Merchandise
+                </h1>
+                <p class="text-lg md:text-xl text-gray-600 max-w-2xl mx-auto mb-8">
+                    Carefully curated products handpicked for quality and style. From jewelry to apparel, find your perfect piece.
+                </p>
+                <div class="flex flex-col md:flex-row items-center justify-center gap-4">
+                    <input type="text" placeholder="Search products..." class="px-6 py-3 border border-gray-300 rounded-full w-full md:w-80 focus:outline-none focus:ring-2 focus:ring-orange-500 focus:border-transparent">
+                    <button class="px-8 py-3 bg-orange-500 text-white rounded-full hover:bg-orange-600 transition font-medium whitespace-nowrap">Search</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Filter & Sort Bar -->
+    <section class="py-6 px-4 md:px-8 border-b border-gray-200">
+        <div class="max-w-7xl mx-auto flex items-center justify-between gap-4">
+            <div class="flex items-center gap-2">
+                <span class="text-sm text-gray-600">Filter by:</span>
+                <select class="px-4 py-2 border border-gray-300 rounded-lg bg-white focus:outline-none focus:ring-2 focus:ring-orange-500 text-sm">
+                    <option>All Categories</option>
+                    <option>Jewelry</option>
+                    <option>T-Shirts</option>
+                    <option>Accessories</option>
+                </select>
+            </div>
+            <div class="flex items-center gap-2">
+                <span class="text-sm text-gray-600">Sort by:</span>
+                <select class="px-4 py-2 border border-gray-300 rounded-lg bg-white focus:outline-none focus:ring-2 focus:ring-orange-500 text-sm">
+                    <option>Newest</option>
+                    <option>Price: Low to High</option>
+                    <option>Price: High to Low</option>
+                    <option>Most Popular</option>
+                </select>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products Grid -->
+    <section class="py-20 md:py-28 px-4 md:px-8 bg-white">
+        <div class="max-w-7xl mx-auto">
+            <div class="grid md:grid-cols-4 sm:grid-cols-2 grid-cols-1 gap-6 md:gap-8">
+                <!-- Product Card 1 -->
+                <a href="shop-details.html" class="group animate-fade-in-up delay-100">
+                    <div class="relative overflow-hidden rounded-2xl bg-gray-100 h-72 md:h-80 mb-4 cursor-pointer">
+                        <img src="/placeholder.svg?height=320&width=280" alt="Product" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                        <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+                            <button class="px-8 py-3 bg-white text-black rounded-full font-semibold hover:bg-orange-500 hover:text-white transition">View Details</button>
+                        </div>
+                        <div class="absolute top-4 right-4 px-3 py-1 bg-orange-500 text-white text-xs rounded-full font-semibold">New</div>
+                    </div>
+                    <h3 class="text-lg font-bold text-black mb-1">Premium Gold Necklace</h3>
+                    <p class="text-sm text-gray-600 mb-3">18K Gold • 45cm</p>
+                    <div class="flex items-center justify-between">
+                        <span class="text-2xl font-bold text-black">$299</span>
+                        <button class="px-4 py-2 bg-orange-500 text-white rounded-full hover:bg-orange-600 transition">Add to Cart</button>
+                    </div>
+                </a>
+
+                <!-- Product Card 2 -->
+                <a href="shop-details.html" class="group animate-fade-in-up delay-200">
+                    <div class="relative overflow-hidden rounded-2xl bg-gray-100 h-72 md:h-80 mb-4 cursor-pointer">
+                        <img src="/placeholder.svg?height=320&width=280" alt="Product" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                        <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+                            <button class="px-8 py-3 bg-white text-black rounded-full font-semibold hover:bg-orange-500 hover:text-white transition">View Details</button>
+                        </div>
+                    </div>
+                    <h3 class="text-lg font-bold text-black mb-1">Classic White T-Shirt</h3>
+                    <p class="text-sm text-gray-600 mb-3">100% Cotton • Unisex</p>
+                    <div class="flex items-center justify-between">
+                        <span class="text-2xl font-bold text-black">$49</span>
+                        <button class="px-4 py-2 bg-orange-500 text-white rounded-full hover:bg-orange-600 transition">Add to Cart</button>
+                    </div>
+                </a>
+
+                <!-- Product Card 3 -->
+                <a href="shop-details.html" class="group animate-fade-in-up delay-300">
+                    <div class="relative overflow-hidden rounded-2xl bg-gray-100 h-72 md:h-80 mb-4 cursor-pointer">
+                        <img src="/placeholder.svg?height=320&width=280" alt="Product" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                        <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+                            <button class="px-8 py-3 bg-white text-black rounded-full font-semibold hover:bg-orange-500 hover:text-white transition">View Details</button>
+                        </div>
+                        <div class="absolute top-4 right-4 px-3 py-1 bg-red-500 text-white text-xs rounded-full font-semibold">Sale</div>
+                    </div>
+                    <h3 class="text-lg font-bold text-black mb-1">Silver Bracelet</h3>
+                    <p class="text-sm text-gray-600 mb-3">Sterling Silver • Adjustable</p>
+                    <div class="flex items-center justify-between">
+                        <div>
+                            <span class="text-2xl font-bold text-black">$159</span>
+                            <span class="text-sm text-gray-400 line-through ml-2">$199</span>
+                        </div>
+                        <button class="px-4 py-2 bg-orange-500 text-white rounded-full hover:bg-orange-600 transition">Add to Cart</button>
+                    </div>
+                </a>
+
+                <!-- Product Card 4 -->
+                <a href="shop-details.html" class="group animate-fade-in-up delay-400">
+                    <div class="relative overflow-hidden rounded-2xl bg-gray-100 h-72 md:h-80 mb-4 cursor-pointer">
+                        <img src="/placeholder.svg?height=320&width=280" alt="Product" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                        <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+                            <button class="px-8 py-3 bg-white text-black rounded-full font-semibold hover:bg-orange-500 hover:text-white transition">View Details</button>
+                        </div>
+                    </div>
+                    <h3 class="text-lg font-bold text-black mb-1">Premium Watch</h3>
+                    <p class="text-sm text-gray-600 mb-3">Stainless Steel • Swiss Movement</p>
+                    <div class="flex items-center justify-between">
+                        <span class="text-2xl font-bold text-black">$499</span>
+                        <button class="px-4 py-2 bg-orange-500 text-white rounded-full hover:bg-orange-600 transition">Add to Cart</button>
+                    </div>
+                </a>
+
+                <!-- Product Card 5 -->
+                <a href="shop-details.html" class="group animate-fade-in-up delay-500">
+                    <div class="relative overflow-hidden rounded-2xl bg-gray-100 h-72 md:h-80 mb-4 cursor-pointer">
+                        <img src="/placeholder.svg?height=320&width=280" alt="Product" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                        <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+                            <button class="px-8 py-3 bg-white text-black rounded-full font-semibold hover:bg-orange-500 hover:text-white transition">View Details</button>
+                        </div>
+                    </div>
+                    <h3 class="text-lg font-bold text-black mb-1">Leather Belt</h3>
+                    <p class="text-sm text-gray-600 mb-3">Genuine Leather • Black</p>
+                    <div class="flex items-center justify-between">
+                        <span class="text-2xl font-bold text-black">$89</span>
+                        <button class="px-4 py-2 bg-orange-500 text-white rounded-full hover:bg-orange-600 transition">Add to Cart</button>
+                    </div>
+                </a>
+
+                <!-- Product Card 6 -->
+                <a href="shop-details.html" class="group animate-fade-in-up delay-600">
+                    <div class="relative overflow-hidden rounded-2xl bg-gray-100 h-72 md:h-80 mb-4 cursor-pointer">
+                        <img src="/placeholder.svg?height=320&width=280" alt="Product" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                        <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+                            <button class="px-8 py-3 bg-white text-black rounded-full font-semibold hover:bg-orange-500 hover:text-white transition">View Details</button>
+                        </div>
+                    </div>
+                    <h3 class="text-lg font-bold text-black mb-1">Silk Scarf</h3>
+                    <p class="text-sm text-gray-600 mb-3">100% Silk • Various Colors</p>
+                    <div class="flex items-center justify-between">
+                        <span class="text-2xl font-bold text-black">$129</span>
+                        <button class="px-4 py-2 bg-orange-500 text-white rounded-full hover:bg-orange-600 transition">Add to Cart</button>
+                    </div>
+                </a>
+
+                <!-- Product Card 7 -->
+                <a href="shop-details.html" class="group animate-fade-in-up delay-100">
+                    <div class="relative overflow-hidden rounded-2xl bg-gray-100 h-72 md:h-80 mb-4 cursor-pointer">
+                        <img src="/placeholder.svg?height=320&width=280" alt="Product" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                        <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+                            <button class="px-8 py-3 bg-white text-black rounded-full font-semibold hover:bg-orange-500 hover:text-white transition">View Details</button>
+                        </div>
+                    </div>
+                    <h3 class="text-lg font-bold text-black mb-1">Pearl Earrings</h3>
+                    <p class="text-sm text-gray-600 mb-3">Freshwater Pearl • Gold</p>
+                    <div class="flex items-center justify-between">
+                        <span class="text-2xl font-bold text-black">$199</span>
+                        <button class="px-4 py-2 bg-orange-500 text-white rounded-full hover:bg-orange-600 transition">Add to Cart</button>
+                    </div>
+                </a>
+
+                <!-- Product Card 8 -->
+                <a href="shop-details.html" class="group animate-fade-in-up delay-200">
+                    <div class="relative overflow-hidden rounded-2xl bg-gray-100 h-72 md:h-80 mb-4 cursor-pointer">
+                        <img src="/placeholder.svg?height=320&width=280" alt="Product" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                        <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+                            <button class="px-8 py-3 bg-white text-black rounded-full font-semibold hover:bg-orange-500 hover:text-white transition">View Details</button>
+                        </div>
+                        <div class="absolute top-4 right-4 px-3 py-1 bg-orange-500 text-white text-xs rounded-full font-semibold">New</div>
+                    </div>
+                    <h3 class="text-lg font-bold text-black mb-1">Designer Sunglasses</h3>
+                    <p class="text-sm text-gray-600 mb-3">UV Protection • Polarized</p>
+                    <div class="flex items-center justify-between">
+                        <span class="text-2xl font-bold text-black">$249</span>
+                        <button class="px-4 py-2 bg-orange-500 text-white rounded-full hover:bg-orange-600 transition">Add to Cart</button>
+                    </div>
+                </a>
+            </div>
+
+            <!-- Pagination -->
+            <div class="flex items-center justify-center gap-2 mt-16">
+                <button class="px-4 py-2 border border-gray-300 rounded-lg hover:bg-gray-100 transition">Previous</button>
+                <button class="px-4 py-2 bg-orange-500 text-white rounded-lg">1</button>
+                <button class="px-4 py-2 border border-gray-300 rounded-lg hover:bg-gray-100 transition">2</button>
+                <button class="px-4 py-2 border border-gray-300 rounded-lg hover:bg-gray-100 transition">3</button>
+                <button class="px-4 py-2 border border-gray-300 rounded-lg hover:bg-gray-100 transition">Next</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-black text-white py-16 px-4 md:px-8">
+        <div class="max-w-7xl mx-auto grid md:grid-cols-4 gap-8 mb-12">
+            <div>
+                <h3 class="text-xl font-bold mb-4">Madison.</h3>
+                <p class="text-gray-400 text-sm">Premium merchandise for those who appreciate quality and style.</p>
+            </div>
+            <div>
+                <h4 class="font-semibold mb-4">Quick Links</h4>
+                <ul class="space-y-2 text-gray-400 text-sm">
+                    <li><a href="#" class="hover:text-white transition">Home</a></li>
+                    <li><a href="#" class="hover:text-white transition">Shop</a></li>
+                    <li><a href="#" class="hover:text-white transition">About</a></li>
+                    <li><a href="#" class="hover:text-white transition">Blog</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="font-semibold mb-4">Support</h4>
+                <ul class="space-y-2 text-gray-400 text-sm">
+                    <li><a href="#" class="hover:text-white transition">Contact Us</a></li>
+                    <li><a href="#" class="hover:text-white transition">Shipping Info</a></li>
+                    <li><a href="#" class="hover:text-white transition">Returns</a></li>
+                    <li><a href="#" class="hover:text-white transition">FAQ</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="font-semibold mb-4">Connect</h4>
+                <ul class="space-y-2 text-gray-400 text-sm">
+                    <li><a href="#" class="hover:text-white transition">Instagram</a></li>
+                    <li><a href="#" class="hover:text-white transition">LinkedIn</a></li>
+                    <li><a href="#" class="hover:text-white transition">Twitter</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="border-t border-gray-800 pt-8 text-center text-gray-400 text-sm">
+            <p>&copy; 2026 Madison. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
